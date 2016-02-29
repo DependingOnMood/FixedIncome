@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="507" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="book_header" min="-2" pref="150" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="twoyear_header" min="-2" pref="264" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="fiveyear_header" min="-2" pref="261" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="tenyear_header" min="-2" pref="272" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="fiveyear_closing_file_mv" max="32767" attributes="0"/>
+                                                  <Component id="fiveyear_mv_header" pref="138" max="32767" attributes="0"/>
+                                                  <Component id="fiveyear_hedge_mv" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                                                      <Component id="tenyear_hedge_mv" min="-2" pref="142" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="1" attributes="0">
+                                                          <Group type="102" attributes="0">
+                                                              <Component id="tenyear_closing_file_risk" min="-2" pref="120" max="-2" attributes="0"/>
+                                                              <EmptySpace max="-2" attributes="0"/>
+                                                              <Component id="tenyear_closing_file_mv" max="32767" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="102" attributes="0">
+                                                              <Component id="tenyear_risk_header" min="-2" pref="118" max="-2" attributes="0"/>
+                                                              <EmptySpace max="-2" attributes="0"/>
+                                                              <Component id="tenyear_mv_header" max="32767" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="fiveyear_spread_mv" pref="138" max="32767" attributes="0"/>
+                                                  <Component id="fiveyear_yield_curve_mv" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="138" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="tenyear_yield_curve_mv" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                                                  <Component id="tenyear_spread_mv" alignment="1" min="-2" pref="142" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="twoyear_risk_header" min="-2" pref="123" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="twoyear_mv_header" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <Component id="twoyear_closing_file_mv" alignment="0" min="-2" pref="142" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="fiveyear_closing_file_risk" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="fiveyear_risk_header" min="-2" pref="118" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="thirtyear_closing_file_risk" min="-2" pref="123" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="thirtyear_closing_file_mv" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="thirtyear_hedge_mv" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                          <Component id="thirtyear_yield_curve_mv" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                          <Component id="thirtyear_spread_mv" alignment="0" min="-2" pref="144" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="thirtyear_risk_header" min="-2" pref="123" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="thirtyear_mv_header" max="32767" attributes="0"/>
+                              </Group>
+                              <Component id="thirtyear_header" alignment="0" min="-2" pref="273" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="sever_side_header2" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="execution_time_header2" alignment="0" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="real_time2" min="-2" pref="89" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="user_time2" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="real_time_header2" min="-2" pref="89" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="user_time_header2" min="-2" pref="90" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="system_time_header2" pref="91" max="32767" attributes="0"/>
+                                  <Component id="system_time2" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="twoyear_hedge_header" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="yield_curve_header" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="spread_header" min="-2" pref="150" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="twoyear_yield_curve_mv" max="32767" attributes="0"/>
+                                  <Component id="twoyear_hedge_mv" max="32767" attributes="0"/>
+                                  <Component id="twoyear_spread_mv" pref="142" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="closing_file_header" min="-2" pref="150" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="twoyear_closing_file_risk" min="-2" pref="123" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="822" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="488" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="button_original" min="-2" pref="140" max="-2" attributes="0"/>
+                  <Component id="button_down" min="-2" max="-2" attributes="0"/>
+                  <Component id="button_up" min="-2" pref="140" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="tenyear_header" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="thirtyear_header" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="book_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="twoyear_header" min="-2" max="-2" attributes="0"/>
+                      <Component id="fiveyear_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="twoyear_risk_header" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="tenyear_risk_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="tenyear_mv_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fiveyear_risk_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="twoyear_mv_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fiveyear_mv_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="thirtyear_risk_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="thirtyear_mv_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="closing_file_header" max="32767" attributes="0"/>
+                          <Component id="twoyear_closing_file_risk" max="32767" attributes="0"/>
+                          <Component id="twoyear_closing_file_mv" max="32767" attributes="0"/>
+                          <Component id="fiveyear_closing_file_risk" alignment="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="fiveyear_closing_file_mv" alignment="3" max="32767" attributes="0"/>
+                              <Component id="tenyear_closing_file_risk" alignment="3" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="thirtyear_closing_file_risk" alignment="0" max="32767" attributes="0"/>
+                          <Component id="thirtyear_closing_file_mv" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="twoyear_hedge_mv" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="fiveyear_hedge_mv" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="thirtyear_hedge_mv" alignment="0" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="twoyear_hedge_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="tenyear_hedge_mv" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="yield_curve_header" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="twoyear_yield_curve_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="fiveyear_yield_curve_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="thirtyear_yield_curve_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tenyear_yield_curve_mv" alignment="3" min="-2" pref="20" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" max="-2" attributes="0">
+                              <Component id="spread_header" alignment="3" max="32767" attributes="0"/>
+                              <Component id="twoyear_spread_mv" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="fiveyear_spread_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="tenyear_spread_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="thirtyear_spread_mv" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Component id="button_up" min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="button_down" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="button_original" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="execution_time_header2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="real_time_header2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="user_time_header2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="system_time_header2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="sever_side_header2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="real_time2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="user_time2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="system_time2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="tenyear_closing_file_mv" min="-2" pref="26" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JTextField" name="book_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Grande" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="book"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_header">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="cc" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Grande" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="2YR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="5YR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Grande" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="10YR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="ff" red="cc" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Grande" size="13" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="30YR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_risk_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Risk"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_mv_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mkt Value"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_mv_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mkt Value"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_mv_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mkt Value"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tenyear_mv_headerActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_mv_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mkt Value"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_risk_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Risk"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_risk_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Risk"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_risk_header">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Risk"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="closing_file_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Closing file"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_closing_file_risk">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="twoyear_closing_file_risk.setText(riskbymaturity_seg[0]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_closing_file_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="twoyear_closing_file_mv.setText(riskbymaturity_seg[1]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_closing_file_risk">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="fiveyear_closing_file_risk.setText(riskbymaturity_seg[2]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_closing_file_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="fiveyear_closing_file_mv.setText(riskbymaturity_seg[3]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_closing_file_risk">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tenyear_closing_file_riskActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="tenyear_closing_file_risk.setText(riskbymaturity_seg[4]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_closing_file_mv">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tenyear_closing_file_mvActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="tenyear_closing_file_mv.setText(riskbymaturity_seg[5]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_closing_file_risk">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="thirtyear_closing_file_riskActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="thirtyear_closing_file_risk.setText(riskbymaturity_seg[6]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_closing_file_mv">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="thirtyear_closing_file_mvActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="thirtyear_closing_file_mv.setText(riskbymaturity_seg[7]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_hedge_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="2yr hedge"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_hedge_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="twoyear_hedge_mv.setText(riskbymaturity_seg[8]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_hedge_mv">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fiveyear_hedge_mvActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="fiveyear_hedge_mv.setText(riskbymaturity_seg[9]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_hedge_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="tenyear_hedge_mv.setText(riskbymaturity_seg[10]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_hedge_mv">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="thirtyear_hedge_mvActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="thirtyear_hedge_mv.setText(riskbymaturity_seg[11]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="yield_curve_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Yield Curve"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_yield_curve_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="twoyear_yield_curve_mv.setText(riskbymaturity_seg[12]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_yield_curve_mv">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fiveyear_yield_curve_mvActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="fiveyear_yield_curve_mv.setText(riskbymaturity_seg[13]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_yield_curve_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="tenyear_yield_curve_mv.setText(riskbymaturity_seg[14]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_yield_curve_mv">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="thirtyear_yield_curve_mv.setText(riskbymaturity_seg[15]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_up">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="shift 50% up"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_upMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="button_upActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_down">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="shift 50% down"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_downMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="button_original">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="original"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="button_originalMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="spread_header">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Spread"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="twoyear_spread_mv">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="spread1" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="inputMethodTextChanged" listener="java.awt.event.InputMethodListener" parameters="java.awt.event.InputMethodEvent" handler="twoyear_spread_mvInputMethodTextChanged"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="twoyear_spread_mvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="fiveyear_spread_mv">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="spread2" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fiveyear_spread_mvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tenyear_spread_mv">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="spread3" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tenyear_spread_mvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="thirtyear_spread_mv">
+      <Properties>
+        <Property name="text" type="java.lang.String" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="spread4" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="thirtyear_spread_mvActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="execution_time_header2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="execution time:"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="execution_time_header2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="real_time_header2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Real"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="user_time_header2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="User"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="system_time_header2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="System"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="sever_side_header2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="(server side)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="real_time2">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="real_time2.setText(riskbymaturity_seg[16]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="user_time2">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="user_time2.setText(riskbymaturity_seg[17]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="system_time2">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="33" green="33" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="system_time2.setText(riskbymaturity_seg[18]);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="33" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="update"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseClicked"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton1MouseEntered"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="cc" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Lucida Grande" size="18" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="                                                                  Risk by Maturity (amounts in 000&apos;s)"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

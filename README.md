@@ -1,6 +1,6 @@
 # FixedIncome
 
-It's a application impletments the features listed in FINALfinalGUI_reqs.xls.
+It's an application implements the features listed in FINALfinalGUI_reqs.xls.
 
 Include calculate in VaRs, 2 year hedge, Daily Change by Issuer, Risk by Maturity, etc.
 

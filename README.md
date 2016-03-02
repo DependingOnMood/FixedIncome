@@ -4,7 +4,7 @@ It's an application implements the features listed in FINALfinalGUI_reqs.xls.
 
 Include calculate in VaRs, 2 year hedge, Daily Change by Issuer, Risk by Maturity, etc.
 
-Project F is the server site.
+Project F is the server side.
 Put datas in opening book, closing book, curve, also daily changes files.
 Locate to the Project F folder and use command: ./run.sh to make files and run the server
 run.sh makes the makefile.1  output the myserver, then run myserver

@@ -1,0 +1,129 @@
+# makefile to build library and myserver
+.SUFFIXES:.cc
+.cc.o:
+	$(CC) $(INCLUDES) $(CFLAGS) -c $< -o $@
+
+# assign your compiler name to CC if not g++
+CC = g++
+# where your header files are (. is same directory as the makefile)
+INCLUDES=-I.
+# turn on debugging symbols
+CFLAGS=-g
+# where your object files are (. is the same directory as the makefile)
+LDFLAGS=-L.
+
+# when "make" is typed at command line with no args "default" will get executed and do "all"
+default: 	all
+
+#
+# assign source and headers for our "utility" lib to variables below
+#
+# replace "SBB" (my initials) with yours or use the same filenames
+
+LIB_UTIL_SRC = SBB_util.cc
+LIB_UTIL_SRC_HDR = SBB_util.h
+#
+LIB_UTIL_OBJ = $(LIB_UTIL_SRC:.cc=.o)
+$(LIB_UTIL_OBJ) : $(LIB_UTIL_SRC_HDR)
+LIB_UTIL_TARGET = libutil.a
+
+LIB_DATE_SRC = SBB_date.cc
+LIB_DATE_SRC_HDR = SBB_date.h
+#
+LIB_DATE_OBJ = $(LIB_DATE_SRC:.cc=.o)
+$(LIB_DATE_OBJ) : $(LIB_DATE_SRC_HDR)
+LIB_DATE_TARGET = libdate.a
+
+LIB_IO_SRC = SBB_io.cc
+LIB_IO_SRC_HDR = SBB_io.h
+#
+LIB_IO_OBJ = $(LIB_IO_SRC:.cc=.o)
+$(LIB_IO_OBJ) : $(LIB_IO_SRC_HDR)
+LIB_IO_TARGET = libio.a
+
+LIB_CAL_SRC = Calculator.cc
+LIB_CAL_SRC_HDR = Calculator.h
+#
+LIB_CAL_OBJ = $(LIB_CAL_SRC:.cc=.o)
+$(LIB_CAL_OBJ) : $(LIB_CAL_SRC_HDR)
+LIB_CAL_TARGET = libcal.a
+
+LIB_YIE_SRC = Yield_curve.cc
+LIB_YIE_SRC_HDR = Yield_curve.h
+#
+LIB_YIE_OBJ = $(LIB_YIE_SRC:.cc=.o)
+$(LIB_YIE_OBJ) : $(LIB_YIE_SRC_HDR)
+LIB_YIE_TARGET = libyie.a
+
+LIB_RAT_SRC = SBB_ratings.cc
+LIB_RAT_SRC_HDR = SBB_ratings.h
+#
+LIB_RAT_OBJ = $(LIB_RAT_SRC:.cc=.o)
+$(LIB_RAT_OBJ) : $(LIB_RAT_SRC_HDR)
+LIB_RAT_TARGET = librat.a
+
+LIB_BOND_SRC = Bond.cc
+LIB_BOND_SRC_HDR = Bond.h
+#
+LIB_BOND_OBJ = $(LIB_BOND_SRC:.cc=.o)
+$(LIB_BOND_OBJ) : $(LIB_BOND_SRC_HDR)
+LIB_BOND_TARGET = libbond.a
+
+LIB_INS_SRC = Instrument.cc
+LIB_INS_SRC_HDR = Instrument.h
+#
+LIB_INS_OBJ = $(LIB_INS_SRC:.cc=.o)
+$(LIB_INS_OBJ) : $(LIB_INS_SRC_HDR)
+LIB_INS_TARGET = libins.a
+
+# 
+# the file where main() is
+MAIN_SRC = sbb_server.cc
+MAINOBJ = $(MAIN_SRC:.cc=.o) 
+$(MAINOBJ) : $(LIB_UTIL_TARGET) $(LIB_DATE_TARGET) $(LIB_IO_TARGET) $(LIB_CAL_TARGET) $(LIB_YIE_TARGET) $(LIB_RAT_TARGET) $(LIB_BOND_TARGET) $(LIB_INS_TARGET)
+MAINTARGET=myserver
+
+ARCHIVE_OPTIONS = rucsv
+
+$(LIB_UTIL_TARGET) : $(LIB_UTIL_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_UTIL_TARGET) $(LIB_UTIL_OBJ)
+
+$(LIB_DATE_TARGET) : $(LIB_DATE_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_DATE_TARGET) $(LIB_DATE_OBJ)
+
+$(LIB_IO_TARGET) : $(LIB_IO_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_IO_TARGET) $(LIB_IO_OBJ)
+
+$(LIB_CAL_TARGET) : $(LIB_CAL_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_CAL_TARGET) $(LIB_CAL_OBJ)
+
+$(LIB_YIE_TARGET) : $(LIB_YIE_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_YIE_TARGET) $(LIB_YIE_OBJ)
+
+$(LIB_RAT_TARGET) : $(LIB_RAT_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_RAT_TARGET) $(LIB_RAT_OBJ)
+
+$(LIB_BOND_TARGET) : $(LIB_BOND_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_BOND_TARGET) $(LIB_BOND_OBJ) $(LIB_CAL_TARGET) $(LIB_CAL_OBJ) $(LIB_DATE_TARGET) $(LIB_DATE_OBJ) $(LIB_YIE_TARGET) $(LIB_YIE_OBJ) $(LIB_RAT_TARGET) $(LIB_RAT_OBJ)
+
+$(LIB_INS_TARGET) : $(LIB_INS_OBJ)
+	ar $(ARCHIVE_OPTIONS) $(LIB_INS_TARGET) $(LIB_INS_OBJ) $(LIB_BOND_TARGET) $(LIB_BOND_OBJ) $(LIB_IO_TARGET) $(LIB_IO_OBJ) $(LIB_YIE_TARGET) $(LIB_YIE_OBJ) $(LIB_RAT_TARGET) $(LIB_RAT_OBJ)
+
+$(MAINTARGET) : $(MAINOBJ) $(LIB_UTIL_TARGET) $(LIB_DATE_TARGET) $(LIB_IO_TARGET) $(LIB_CAL_TARGET) $(LIB_RAT_TARGET) $(LIB_BOND_TARGET) $(LIB_INS_TARGET)
+	$(CC) $(LDFLAGS) $(MAINOBJ) $(LIB_UTIL_TARGET) $(LIB_DATE_TARGET) $(LIB_IO_TARGET) $(LIB_CAL_TARGET) $(LIB_YIE_TARGET) $(LIB_RAT_TARGET) $(LIB_BOND_TARGET) $(LIB_INS_TARGET) -o $(MAINTARGET)
+
+all : util test
+
+test: $(MAINTARGET)
+
+util: $(LIB_UTIL_TARGET)
+
+
+clean:
+	rm -f *.o 
+
+clobber:
+	-rm -f *.o *.a $(MAINTARGET)
+
+backup: clobber
+	tar cvf ./nyu.tar *.*
